@@ -1,23 +1,16 @@
-import logo from "shared/assets/icons/logo.svg";
+import { AppNavBar, InstalledModsSection, ModFileSection } from "widgets/ui";
 
 import css from "./App.module.scss";
 
 const App = () => (
   <div className={css.App} data-testid="App">
-    <header className={css.AppHeader}>
-      <img src={logo} className={css.AppLogo} alt="logo" />
-      <p>
-        Edit <code>src/App.tsx</code> and save to reload.
-      </p>
-      <a
-        className={css.AppLink}
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+    <aside>
+      <AppNavBar />
+    </aside>
+    <main>
+      <InstalledModsSection />
+      <ModFileSection />
+    </main>
   </div>
 );
 

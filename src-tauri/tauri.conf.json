@@ -23,7 +23,13 @@
         "removeFile": true,
         "renameFile": true,
         "exists": true,
-        "scope": ["$APPDATA/**", "$DOCUMENT/**", "$DOWNLOAD/**", "$CONFIG/**"]
+        "scope": [
+          "$APPDATA/**",
+          "$CONFIG/**",
+          "$DOCUMENT/**",
+          "$DOWNLOAD/**",
+          "$HOME/**"
+        ]
       },
       "path": {
         "all": true
@@ -72,10 +78,10 @@
       {
         "fileDropEnabled": false,
         "fullscreen": false,
-        "height": 600,
+        "height": 720,
         "resizable": true,
         "title": "Baldur's Gate 3 Mod Manager by Korotkov",
-        "width": 800
+        "width": 1280
       }
     ]
   }
