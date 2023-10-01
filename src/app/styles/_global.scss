@@ -1,0 +1,36 @@
+@import "./reset";
+@import "./fonts";
+
+@import "./tokens/animation.tokens";
+@import "./tokens/border.tokens";
+@import "./tokens/border-radius.tokens";
+@import "./tokens/color.tokens";
+@import "./tokens/easings.tokens";
+@import "./tokens/font-size.tokens";
+@import "./tokens/font-weight.tokens";
+@import "./tokens/letter-spacing.tokens";
+@import "./tokens/line-height.tokens";
+@import "./tokens/opacity.tokens";
+@import "./tokens/shadows.tokens";
+@import "./tokens/spacings.tokens";
+
+html {
+  --scrollbar-track-color: var(--gray-58);
+  --scrollbar-width: 0.5rem;
+
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  scrollbar-color: var(--scrollbar-track-color) transparent;
+  scrollbar-width: thin; // width is ~8-10px
+
+  &::-webkit-scrollbar {
+    background: transparent;
+    height: var(--scrollbar-width);
+    width: var(--scrollbar-width);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-track-color);
+    border-radius: 0.5rem;
+  }
+}

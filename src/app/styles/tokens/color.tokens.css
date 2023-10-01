@@ -1,0 +1,51 @@
+/* stylelint-disable */
+:root {
+  /**
+  * @tokens Colors
+  * @presenter Color
+  */
+  --black: #000000;
+  --black-rgb: rgb(0, 0, 0);
+  --black-hsl: hsl(0deg, 0%, 0%);
+  --gray-23: #3c3c3c;
+  --gray-23-rgb: rgb(60, 60, 60);
+  --gray-23-hsl: hsl(0deg, 0%, 23.5294117647%);
+  --gray-58: #959595;
+  --gray-58-rgb: rgb(149, 149, 149);
+  --gray-58-hsl: hsl(0deg, 0%, 58.431372549%);
+  --gray-72: #b8b8b8;
+  --gray-72-rgb: rgb(184, 184, 184);
+  --gray-72-hsl: hsl(0deg, 0%, 72.1568627451%);
+  --gray-88: #dfdfdf;
+  --gray-88-rgb: rgb(223, 223, 223);
+  --gray-88-hsl: hsl(0deg, 0%, 87.4509803922%);
+  --gray-93: #ededed;
+  --gray-93-rgb: rgb(237, 237, 237);
+  --gray-93-hsl: hsl(0deg, 0%, 92.9411764706%);
+  --gray-96: #f6f6f6;
+  --gray-96-rgb: rgb(246, 246, 246);
+  --gray-96-hsl: hsl(0deg, 0%, 96.4705882353%);
+  --white: #ffffff;
+  --white-rgb: rgb(255, 255, 255);
+  --white-hsl: hsl(0deg, 0%, 100%);
+  --green: #afdd41;
+  --green-rgb: rgb(175, 221, 65);
+  --green-hsl: hsl(77.6923076923deg, 69.6428571429%, 56.0784313725%);
+  --violet-1: #3248bf;
+  --violet-1-rgb: rgb(50, 72, 191);
+  --violet-1-hsl: hsl(230.6382978723deg, 58.5062240664%, 47.2549019608%);
+  --violet-2: #576ce0;
+  --violet-2-rgb: rgb(87, 108, 224);
+  --violet-2-hsl: hsl(230.802919708deg, 68.8442211055%, 60.9803921569%);
+  --red-1: #ff0000;
+  --red-1-rgb: rgb(255, 0, 0);
+  --red-1-hsl: hsl(0deg, 100%, 50%);
+  --red-2: #ff4343;
+  --red-2-rgb: rgb(255, 67, 67);
+  --red-2-hsl: hsl(0deg, 100%, 63.137254902%);
+  --red-3: #ffb4b4;
+  --red-3-rgb: rgb(255, 180, 180);
+  --red-3-hsl: hsl(0deg, 100%, 85.2941176471%);
+}
+
+/*# sourceMappingURL=color.tokens.css.map */

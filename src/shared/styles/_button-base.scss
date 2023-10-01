@@ -1,0 +1,125 @@
+/* stylelint-disable max-nesting-depth */
+@use "./_vars.scss" as v;
+
+%button-base {
+  --background: var(--black);
+  --border-color: var(--black);
+  --color: var(--white);
+  --icon-color: var(--gray-58);
+
+  align-items: center;
+  background-color: var(--background);
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  color: var(--color);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  height: 4.4rem;
+  justify-content: center;
+  line-height: 140%;
+  min-width: 4.4rem;
+  overflow: hidden;
+  padding: 1.1rem 1.4rem;
+  -webkit-tap-highlight-color: transparent; // removes blue highlight in mobile chrome
+  transition:
+    background-color 250ms var(--ease-1),
+    border-color 250ms var(--ease-1),
+    color 250ms var(--ease-1),
+    transform 250ms var(--ease-5);
+  white-space: nowrap;
+
+  svg {
+    fill: var(--icon-color);
+    max-height: 1.4rem;
+    transition: fill 250ms var(--ease-1);
+    width: 1.4rem;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:disabled {
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  &:focus-visible {
+    @include v.focus-visible;
+  }
+
+  &.contained {
+    svg:only-child {
+      --icon-color: var(--white);
+    }
+
+    &:hover {
+      --background: var(--gray-23);
+      --border-color: var(--gray-23);
+    }
+
+    &:disabled {
+      --background: var(--gray-72);
+      --border-color: var(--gray-72);
+
+      pointer-events: none;
+    }
+
+    &.secondary {
+      --background: var(--white);
+      --border-color: var(--gray-88);
+      --color: var(--black);
+
+      font-weight: 300;
+
+      svg:only-child {
+        --icon-color: var(--black);
+      }
+
+      &:hover {
+        --border-color: var(--gray-58);
+      }
+
+      &:active {
+        --border-color: var(--black);
+        --icon-color: var(--black);
+      }
+
+      &:disabled {
+        --border-color: var(--gray-88);
+        --icon-color: var(--gray-88);
+        --color: var(--gray-72);
+      }
+    }
+
+    &.error {
+      --background: var(--red-1);
+      --border-color: transparent;
+      --color: var(--white);
+      --icon-color: var(--white);
+
+      &:hover {
+        --background: var(--red-2);
+      }
+
+      &:active {
+      }
+
+      &:disabled {
+        --background: var(--red-3);
+      }
+    }
+  }
+
+  &.transparent {
+    --background: transparent;
+    --border-color: transparent;
+    --color: var(--black);
+
+    &:hover {
+      --color: var(--black);
+    }
+  }
+}

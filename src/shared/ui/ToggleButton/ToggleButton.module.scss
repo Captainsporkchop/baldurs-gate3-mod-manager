@@ -1,0 +1,26 @@
+@import "../../styles/button-base";
+
+.ToggleButton {
+  @extend %button-base;
+
+  // TODO ask Natasha about button width
+  justify-content: flex-start;
+
+  &:is(.active:not(:disabled)) {
+    --border-color: var(--black);
+    --background: var(--black);
+    --icon-color: var(--gray-58);
+    --color: var(--white);
+
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  .content {
+    align-items: center;
+    display: inline-flex;
+    gap: 1rem;
+    max-height: var(--text-height);
+    white-space: nowrap;
+  }
+}

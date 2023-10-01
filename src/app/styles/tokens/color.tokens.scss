@@ -1,0 +1,39 @@
+/* stylelint-disable */
+@function getrgb($color) {
+  @return "rgb(" + red($color) + ", " + green($color) + ", " + blue($color) +
+    ")";
+}
+
+@function gethsl($color) {
+  @return "hsl(" + hue($color) + ", " + saturation($color) + ", " +
+    lightness($color) + ")";
+}
+
+$colors: (
+  black: #000000,
+  gray-23: #3c3c3c,
+  gray-58: #959595,
+  gray-72: #b8b8b8,
+  gray-88: #dfdfdf,
+  gray-93: #ededed,
+  gray-96: #f6f6f6,
+  white: #ffffff,
+  green: #afdd41,
+  violet-1: #3248bf,
+  violet-2: #576ce0,
+  red-1: #ff0000,
+  red-2: #ff4343,
+  red-3: #ffb4b4,
+);
+
+:root {
+  /**
+  * @tokens Colors
+  * @presenter Color
+  */
+  @each $name, $value in $colors {
+    --#{$name}: #{$value};
+    --#{$name}-rgb: #{getrgb($value)};
+    --#{$name}-hsl: #{gethsl($value)};
+  }
+}

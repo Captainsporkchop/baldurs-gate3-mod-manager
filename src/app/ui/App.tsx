@@ -1,8 +1,9 @@
+import logo from "shared/assets/icons/logo.svg";
+
 import css from "./App.module.scss";
-import logo from "./logo.svg";
 
 const App = () => (
-  <div className={css.App}>
+  <div className={css.App} data-testid="App">
     <header className={css.AppHeader}>
       <img src={logo} className={css.AppLogo} alt="logo" />
       <p>
@@ -20,4 +21,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+export { App };
